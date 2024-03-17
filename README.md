@@ -24,10 +24,21 @@ Our objective is to build an automated solution for urban farming where factors 
 In our proposed system architecture, we intend to employ six M5StickC Plus devices. Each pot will be outfitted with three M5StickC Plus units, with each unit connected to one of three distinct sensors: a Light Sensor, a Soil Moisture Sensor, or a DHT sensor (which measures both temperature and humidity). The data gathered from these sensors will then be consolidated by a fourth M5StickC Plus, which serves as the data collation point. This consolidated data is then transmitted to a fifth M5StickC Plus via Painless Mesh, acting as an intermediary in the data flow. The fifth M5StickC Plus further relays the data to the sixth and final M5StickC Plus, designated as the Central Hub. This Central Hub functions as an MQTT client, publishing the collected data to various topics on the MQTT Broker. Utilising Gravio Studio, we will subscribe to the MQTT Broker to visually present the data. In the event that any sensor anomalies are detected, Gravio will facilitate the sending of push notifications to the end users via email.
 
 ## Software and Hardware 
-- M5StickC Plus (x7)
-- Light Sensor Module (x1)
-- DHT Sensor (x1)
-- Soil Moisture Sensor (x1)
-- LED (x3)
-- Arduino IDE
-- Gravio Studio
+
+### Hardware
+Sensor  | Amount
+------------- | -------------
+M5StickC Plus   | 7
+Light Sensor Module  | 1
+Light Sensor Module  | 1
+DHT Sensor  | 1
+Soil Moisture Sensor  | 1
+LED  | 3
+
+
+### Software
+Arduino IDE
+More Info: https://www.arduino.cc/en/software
+
+Gravio Studio
+More Info: https://www.gravio.com/en/download
